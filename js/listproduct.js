@@ -1,6 +1,5 @@
 $(document).ready(function () {
     var changebg = $(".piimg-wp")
-    // console.log(changebg);
     for (let i = 0; i < changebg.length; i++) {
         if (i % 2 == 1) {
             $(changebg[i]).addClass("bg-while")
