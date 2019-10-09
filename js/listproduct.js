@@ -2,28 +2,48 @@ $(document).ready(function () {
     var changebg = $(".piimg-wp")
     // console.log(changebg);
     for (let i = 0; i < changebg.length; i++) {
-        if(i%2 == 1){
+        if (i % 2 == 1) {
             $(changebg[i]).addClass("bg-while")
-        }else{
+        } else {
             $(changebg[i]).addClass("bg-pink")
         }
     }
     $(window).resize(function () {
         var w = $(window).width();
-        // console.log(w);
         if (w < 768) {
-            console.log("hi");
-            $(".plci-content").slideUp();
-            var cap = $(".plci-cap");
-            for (let i = 0; i < cap.length; i++) {
-                $(cap[i]).click(function () { 
-                    $(this).parent().siblings(".pplc-item").children(".plci-content").slideUp("slow");
-                    $(this).siblings(".plci-content").slideDown("slow");
-                });
-            }   
+            var x = 0;
+            $(".plci-cap").click(function () {
+                if (x === 0) {
+                    $(this).parent().siblings(".pplc-item").children(".plci-content").removeClass("show");
+                    $(this).siblings(".plci-content").addClass("show");
+                    x = 1;
+                } else {
+                    $(this).parent().siblings(".pplc-item").children(".plci-content").removeClass("show");
+                    $(this).siblings(".plci-content").removeClass("show");
+                    x = 0
+                }
+            });
         }
-        else{
-            $(".plci-content").slideDown();
+        else {
+            $(".plci-content").unbind();
         }
     });
+    var w = $(window).width();
+    if (w < 768) {
+        var x = 0;
+        $(".plci-cap").click(function () {
+            if (x === 0) {
+                $(this).parent().siblings(".pplc-item").children(".plci-content").removeClass("show");
+                $(this).siblings(".plci-content").addClass("show");
+                x = 1;
+            } else {
+                $(this).parent().siblings(".pplc-item").children(".plci-content").removeClass("show");
+                $(this).siblings(".plci-content").removeClass("show");
+                x = 0
+            }
+        });
+    }
+    else {
+        $(".plci-content").unbind();
+    }
 });
