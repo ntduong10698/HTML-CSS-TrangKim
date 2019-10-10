@@ -1,0 +1,39 @@
+/*END  GENARAL */
+:root {
+    --font-16: 16px;
+    --font-13: 13px;
+    --font-20: 20px;
+    --font-26: 26px;
+    --font-42: 42px;
+    --wed-yellow: #e2a22a;
+    --text-color-yellow: #e2a22a;
+    --text-color-yellow-light: #fff7e9;
+    --color-content: #6b6b6b;
+    --color-title: #000000;
+    --color-content-phu: #aaaaaa;
+    --color-white: white;
+}
+
+html {
+
+}
+
+body {
+    margin: auto;
+    min-width: 350px;
+}
+.container{
+    min-width: 350px;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+ul, li {
+    list-style: none;
+}
+/*END  GENARAL */

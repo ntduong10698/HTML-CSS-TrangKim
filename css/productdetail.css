@@ -39,9 +39,10 @@ ul, li {
 /*END  GENARAL */
 /* ========MAIN======== */
 main{
-    padding:40px 0;
+
 }
 .p-prodet{
+    padding: 40px 0;
     width: 100%;
 }
 .ppdr-itemwp{
