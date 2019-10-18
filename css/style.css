@@ -43,13 +43,11 @@ ul, li {
     position: fixed;
     top: 0;
     left: 0;
-    width: 350px;
-    background-color: var(--text-color-yellow);
+    width: 100%;
+    background-color: #e2a22a;
     height: 100%;
     z-index: 10000;
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../public/img/bgaboutme.png); */
+    display: none;
 }
 .menumb-wp{
 
@@ -66,13 +64,12 @@ ul, li {
     padding: 10px;
     color: white;
     text-shadow: 1px 1px 4px #dedede;
-    border: 1px solid #dedede;
-    border-top: none;
+    text-align: center;
 } 
-.menumb-wp ul li a:hover{
+/* .menumb-wp ul li a:hover{
     background-color: white;
     color: rgba(153, 205, 50, 0.555);
-}
+} */
 /* ==========X========MENU MOBILE==========X===========*/
 
 /* HEADER */
