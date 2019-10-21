@@ -5,18 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang chủ</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- Font Awesome 5 Kit code-->
+    <script src="https://kit.fontawesome.com/3bbe6e5ad3.js"></script>
+    <!-- Main css -->
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/home.js"></script>
-    <title>Document</title>
 </head>
 
 <body>
@@ -65,16 +61,16 @@
                 <div class="block-icon-header">
                     <ul>
                         <li>
-                            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <a href=""><i class="fab fa-youtube" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </li>
 
                     </ul>
@@ -85,7 +81,7 @@
             <div class="block-nav">
                 <div class="bl-nav-left">
                     <div class="nav-search">
-                        <input type="text" placeholder="Tìm kiếm">
+                        <input type="text" placeholder="Tìm kiếm...">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </div>
                     <div class="bl-nav">
@@ -138,7 +134,7 @@
                 </div>
                 <div class="bl-nav-right">
                     <div class="name-company">
-                        <span>cong ty tnhh đầu tư thương mại và dịch vụ trang kim</span>
+                        <span>công ty tnhh đầu tư thương mại và dịch vụ trang kim</span>
                     </div>
                 </div>
             </div>
@@ -254,35 +250,40 @@
         </section>
         <!-- END BANNER -->
         <!-- MINI BAR  -->
-        <section id="miniBar">
+        <section class="slogan">
             <div class="container">
-                <div class="block-mini-bar">
-                    <div class="mini-bar">
-                        <div class="mini-bar-1">
-                            <img src="./public/img/tk1.png" alt="">
-                        </div>
-                        <div class="mini-bar-2">
-                            <p>Dịch Vụ</p>
-                            <p>Chuyên nghiệp</p>
-                        </div>
-
-                    </div>
-                    <div class="mini-bar">
-                        <div class="mini-bar-1">
-                            <img src="./public/img/logo.png" alt="">
-                        </div>
-                        <div class="mini-bar-2">
-                            <span>0962 931 839</span>
-                            <span>0969 623 399</span>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="sloitem-wp sloitem1">
+                            <div class="sloi-img">
+                                <img src="./public/img/tkcircle1.png" alt="">
+                            </div>
+                            <div class="sloi-text">
+                                <span class="slit-cap">Dịch vụ</span>
+                                <span>Chuyên nghiệp</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="mini-bar">
-                        <div class="mini-bar-1">
-                            <img src="./public/img/tk2.png" alt="">
+                    <div class="col-4">
+                        <div class="sloitem-wp sloitem2">
+                            <div class="sloi-img">
+                                <img src="./public/img/tkcircle2.png" alt="">
+                            </div>
+                            <div class="sloi-text">
+                                <span class="slit-num"><a href="tel:0962 931 839">0962 931 839</a></span>
+                                <span class="slit-num"><a href="tel:0969 623 399">0969 623 399</a></span>
+                            </div>
                         </div>
-                        <div class="mini-bar-2">
-                            <p>Sản Phẩm </p>
-                            <p>Chất Lượng</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="sloitem-wp sloitem3">
+                            <div class="sloi-img">
+                                <img src="./public/img/scircle1.png" alt="">
+                            </div>
+                            <div class="sloi-text">
+                                <span class="slit-cap">Sản phẩm</span>
+                                <span>Chất lượng</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -828,14 +829,22 @@
         </div>
     </footer>
     <!-- END FOOTER -->
-    <script>
-        $(document).ready(function () {
-            $(" .banner-right").height($("#banner").height());
-            $(" .banner-left").height($("#banner").height());
 
 
-        });
-    </script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--Touch Swipe-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <!-- Main js -->
+    <script src="./js/home.js"></script>
 </body>
 
 </html>
