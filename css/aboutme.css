@@ -123,8 +123,11 @@ main {
 
 .sloi-text span.slit-num {
     font-size: 20px;
-}
 
+}
+.sloi-text span.slit-num a{
+    color: white;
+}
 .sloitem1 {
     justify-content: flex-start;
 }
