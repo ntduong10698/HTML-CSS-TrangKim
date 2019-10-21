@@ -35,7 +35,9 @@ main {}
     font-size: var(--font-16);
     font-weight: 600;
 }
-
+.catalog-ct span a:hover {
+    color: var(--text-color-yellow);
+}
 .catalog-ct span>span {
     color: var(--text-color-yellow);
 }
