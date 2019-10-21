@@ -24,8 +24,11 @@ html {
 body {
     margin: auto;
     position: relative;
+    min-width: 366px;
 }
-
+.container{
+    min-width: 366px;
+}
 a, a:hover {
     text-decoration: none;
 }
