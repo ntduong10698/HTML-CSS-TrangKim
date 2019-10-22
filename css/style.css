@@ -38,7 +38,10 @@ ul {
 ul, li {
     list-style: none;
 }
-
+.rotate{
+  
+    transform: rotate(-180deg);
+}
 /*END  GENARAL */
 /* ===================MENU MOBILE======================*/
 .menu-mobile{
@@ -174,45 +177,63 @@ background: white;
     top: 0;
     width: 100%;
     height: 100%;
-    display: none;
+
     background: #00000057;
 }
 #menu2 .block-menu-2{
     height: 100%;
     display: inline-block;
     width: 40%;
-    max-width: 250px;
+    max-width: 300px;
     padding: 10px;
     background: var(--text-color-yellow);
 }
 #menu2 .block-menu-2>i{}
 .block-menu-2 ul{}
 .block-menu-2 ul li{
-    padding: 5px 10px;
+  
     cursor: pointer;
 }
 .block-menu-2 ul li a{
-    color: white;
+    color: white!important;
     font-size: var(--font-16);
-    font-weight: 500;
     display: block;
     width: 100%;
 }
 .block-menu-2 >ul >li:hover{
-    background: #fdc255;
+    
+}
+.block-menu-2>img{
+    float: right;
 }
 .block-menu-2>ul{}
-.block-menu-2>ul>li{
+.block-menu-2>ul>li{border-bottom: 1px solid white;padding: 0px 5px;}
+.block-menu-2>ul>li>a{
+    display: flex;
+    padding: 8px 0px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-.block-menu-2>ul>li>a{}
-.menu2-layer-2{
+.block-menu-2>ul>li>a>img{
+    transition: 0.3s;
+}
+.menu2-layer2{
     display: none;
+    padding: 0px 0px 0px 10px;
 }
-.menu2-layer-2>ul{}
-.menu2-layer-2>ul>li:hover{
-    background: #fdc255;
+.menu2-layer2>ul{}
+.menu2-layer2>ul>li:hover{
+  
 }
-.menu2-layer-2>ul>li>a{}
+.menu2-layer2>ul>li>a{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px;
+    border-bottom: 1px solid;
+}
 .menu2-layer-3{
     display: none;
 }
@@ -1176,6 +1197,7 @@ background: white;
     color: white;
     font-weight: 500;
 }
+
 /* END FOOTER */
 /* RESPONSIVE HOME */
 @media screen and (max-width:1300px){
