@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang Kim - Liên Hệ</title>
+    <title>Trang Kim - Tin tức chi tiết</title>
     <!-- Bootstrap 4 Css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -18,6 +18,10 @@
 
 <body>
     <main>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
+
         <section class="catalog">
             <div class="container-fluid">
                 <div class="row">
@@ -69,232 +73,107 @@
                 </div>
             </div>
         </section>
-        <section class="p-news">
-            <div class="newest">
+        <section class="p-newdetail">
+            <div class="newd-title">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <span class="newsdiv-cap">Bài viết <span>mới nhất</span></span>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <a class="new-wp" href="#">
-                                <div class="new-img">
-                                    <img src="./public/img/imgnew1.png" alt="">
+                            <div class="newdt-wp">
+                                <span>Trong thời gian thần tốc, 8 tips sau sẽ cho bạn làn da sáng bật tông, bóng
+                                    mướt</span>
+                                <div class="ndt-wp">
+                                    <time><span>Ngày đăng:</span>20/10/2019</time>
+                                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+                                        data-width="190" data-layout="button_count" data-action="like" data-size="small"
+                                        data-show-faces="false" data-share="true"></div>
                                 </div>
-                                <div class="new-text">
-                                    <span>Tiếc diên năm 1010 tui thấy một hiện tượng lạ ở Paosion Palay.</span>
-                                    <p>Rồng thăng long, cả nước tung hô chọn ra noi kinh đô cho Đế
-                                        quốc Đại Việt. Một nơi có thế rồng toạ hổ ngồi, dễ thủ khó
-                                        công, đất đai màu mỡ. Việt Nam vô địch</p>
-                                    <time>2/4/2019</time>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <a class="new-wp" href="#">
-                                <div class="new-img">
-                                    <img src="./public/img/imgnew1.png" alt="">
-                                </div>
-                                <div class="new-text">
-                                    <span>Tiếc diên năm 1010 tui thấy một hiện tượng lạ ở Paosion Palay.</span>
-                                    <p>Rồng thăng long, cả nước tung hô chọn ra noi kinh đô cho Đế
-                                        quốc Đại Việt. Một nơi có thế rồng toạ hổ ngồi, dễ thủ khó
-                                        công, đất đai màu mỡ. Việt Nam vô địch</p>
-                                    <time>2/4/2019</time>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <a class="new-wp" href="#">
-                                <div class="new-img">
-                                    <img src="./public/img/imgnew1.png" alt="">
-                                </div>
-                                <div class="new-text">
-                                    <span>Tiếc diên năm 1010 tui thấy một hiện tượng lạ ở Paosion Palay.</span>
-                                    <p>Rồng thăng long, cả nước tung hô chọn ra noi kinh đô cho Đế
-                                        quốc Đại Việt. Một nơi có thế rồng toạ hổ ngồi, dễ thủ khó
-                                        công, đất đai màu mỡ. Việt Nam vô địch</p>
-                                    <time>2/4/2019</time>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <a class="new-wp" href="#">
-                                <div class="new-img">
-                                    <img src="./public/img/imgnew1.png" alt="">
-                                </div>
-                                <div class="new-text">
-                                    <span>Tiếc diên năm 1010 tui thấy một hiện tượng lạ ở Paosion Palay.</span>
-                                    <p>Rồng thăng long, cả nước tung hô chọn ra noi kinh đô cho Đế
-                                        quốc Đại Việt. Một nơi có thế rồng toạ hổ ngồi, dễ thủ khó
-                                        công, đất đai màu mỡ. Việt Nam vô địch</p>
-                                    <time>2/4/2019</time>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <ul class="new-pagi">
-                                <li><span>1</span></li>
-                                <li><span>2</span></li>
-                                <li><span>3</span></li>
-                                <li><span><i class="fas fa-long-arrow-alt-right"></i></span></li>
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="newreadalot">
+            <div class="newd-content">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <span class="newsdiv-cap">Bài viết <span>đọc nhiều</span></span>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="new2-wp" href="#">
-                                <div class="new2-img">
-                                    <img src="./public/img/new2img1.png" alt="">
-                                </div>
-                                <div class="new2-text">
-                                    <div class="new2time">
-                                        <span>8 THÁNG 8, 2019</span>
-                                    </div>
-                                    <span>CÁCH GIỮ CHO DA LUÔN TƯƠI TRẺ</span>
-                                    <div class="socail">
-                                        <span><i class="fas fa-thumbs-up"></i> 15 Lượt thích</span>
-                                        <span><i class="fas fa-comment-alt"></i> 15 Bình luận</span>
-                                    </div>
-                                    <p>Môi trường đang trở nên ô nhiễm hơn, nếu không biết cách bảo vệ, làn da bạn sẽ
-                                        không thể chống trọi với ánh nắng mặt trời, khói bụi và vi khuẩn,... Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing elit. Nemo amet voluptate iusto
-                                        possimus, expedita dolorem quis, sapiente quidem soluta laborum odio enim
-                                        numquam distinctio! Veniam, sapiente ipsam! Animi, porro debitis!</p>
-                                    <span class="readmore"><a href="#">Đọc tiếp >></a></span>
-                                </div>
+                            <p>Trên đường đua chăm sóc da, một làn da sáng hồng, rạng rỡ là đích đến chị em nào cũng
+                                muốn nhanh chóng chạm tới. Nghe thì "nguy hiểm" thế thôi chứ thực ra, ước muốn này rất
+                                dễ thực hiện, thậm chí còn trở thành hiện thực trong khoảng thời gian siêu thần tốc nếu
+                                bạn áp dụng 8 tips "đơn giản như đan rổ" dưới đây.</p>
+                            <div class="ndcstep">
+                                <span>1. Dùng thêm toner</span>
+                                <p>Toner không hề là sản phẩm "vô thưởng vô phạt", ngoài công dụng loại bỏ nốt những tàn
+                                    dư còn sót lại sau bước làm sạch kép, giúp làn da trở nên tinh khiết, toner còn tạo
+                                    điều kiện cho những sản phẩm như serum, kem dưỡng ẩm thẩm thấu tốt hơn; từ đó, bạn
+                                    sẽ có được làn da tươi tắn, căng sáng lấp lánh hơn hẳn khi chưa dùng toner.</p>
+                            </div>
+                            <div class="ndcimg">
+                                <img src="./public/img/newdtimg1.png" alt="">
+                            </div>
+                            <div class="ndcstep">
+                                <span>1. Dùng thêm toner</span>
+                                <p>Toner không hề là sản phẩm "vô thưởng vô phạt", ngoài công dụng loại bỏ nốt những tàn
+                                    dư còn sót lại sau bước làm sạch kép, giúp làn da trở nên tinh khiết, toner còn tạo
+                                    điều kiện cho những sản phẩm như serum, kem dưỡng ẩm thẩm thấu tốt hơn; từ đó, bạn
+                                    sẽ có được làn da tươi tắn, căng sáng lấp lánh hơn hẳn khi chưa dùng toner.</p>
+                            </div>
+                            <div class="ndcstep">
+                                <span>1. Dùng thêm toner</span>
+                                <p>Toner không hề là sản phẩm "vô thưởng vô phạt", ngoài công dụng loại bỏ nốt những tàn
+                                    dư còn sót lại sau bước làm sạch kép, giúp làn da trở nên tinh khiết, toner còn tạo
+                                    điều kiện cho những sản phẩm như serum, kem dưỡng ẩm thẩm thấu tốt hơn; từ đó, bạn
+                                    sẽ có được làn da tươi tắn, căng sáng lấp lánh hơn hẳn khi chưa dùng toner.</p>
+                            </div>
+                            <div class="ndcstep">
+                                <span>1. Dùng thêm toner</span>
+                                <p>Toner không hề là sản phẩm "vô thưởng vô phạt", ngoài công dụng loại bỏ nốt những tàn
+                                    dư còn sót lại sau bước làm sạch kép, giúp làn da trở nên tinh khiết, toner còn tạo
+                                    điều kiện cho những sản phẩm như serum, kem dưỡng ẩm thẩm thấu tốt hơn; từ đó, bạn
+                                    sẽ có được làn da tươi tắn, căng sáng lấp lánh hơn hẳn khi chưa dùng toner.</p>
+                            </div>
+                            <div class="ndcstep">
+                                <span>1. Dùng thêm toner</span>
+                                <p>Toner không hề là sản phẩm "vô thưởng vô phạt", ngoài công dụng loại bỏ nốt những tàn
+                                    dư còn sót lại sau bước làm sạch kép, giúp làn da trở nên tinh khiết, toner còn tạo
+                                    điều kiện cho những sản phẩm như serum, kem dưỡng ẩm thẩm thấu tốt hơn; từ đó, bạn
+                                    sẽ có được làn da tươi tắn, căng sáng lấp lánh hơn hẳn khi chưa dùng toner.</p>
+                            </div>
+                            <div class="ndcimg">
+                                <img src="./public/img/newdtimg2.png" alt="">
+                            </div>
+                            <div class="ndcstep">
+                                <span>1. Dùng thêm toner</span>
+                                <p>Toner không hề là sản phẩm "vô thưởng vô phạt", ngoài công dụng loại bỏ nốt những tàn
+                                    dư còn sót lại sau bước làm sạch kép, giúp làn da trở nên tinh khiết, toner còn tạo
+                                    điều kiện cho những sản phẩm như serum, kem dưỡng ẩm thẩm thấu tốt hơn; từ đó, bạn
+                                    sẽ có được làn da tươi tắn, căng sáng lấp lánh hơn hẳn khi chưa dùng toner.</p>
+                            </div>
+                            <div class="ndcstep">
+                                <span>1. Dùng thêm toner</span>
+                                <p>Toner không hề là sản phẩm "vô thưởng vô phạt", ngoài công dụng loại bỏ nốt những tàn
+                                    dư còn sót lại sau bước làm sạch kép, giúp làn da trở nên tinh khiết, toner còn tạo
+                                    điều kiện cho những sản phẩm như serum, kem dưỡng ẩm thẩm thấu tốt hơn; từ đó, bạn
+                                    sẽ có được làn da tươi tắn, căng sáng lấp lánh hơn hẳn khi chưa dùng toner.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="new2-wp" href="#">
-                                <div class="new2-img">
-                                    <img src="./public/img/new2img2.png" alt="">
-                                </div>
-                                <div class="new2-text">
-                                    <div class="new2time">
-                                        <span>8 THÁNG 8, 2019</span>
-                                    </div>
-                                    <span>CÁCH GIỮ CHO DA LUÔN TƯƠI TRẺ</span>
-                                    <div class="socail">
-                                        <span><i class="fas fa-thumbs-up"></i> 15 Lượt thích</span>
-                                        <span><i class="fas fa-comment-alt"></i> 15 Bình luận</span>
-                                    </div>
-                                    <p>Môi trường đang trở nên ô nhiễm hơn, nếu không biết cách bảo vệ, làn da bạn sẽ
-                                        không thể chống trọi với ánh nắng mặt trời, khói bụi và vi khuẩn,... Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing elit. Nemo amet voluptate iusto
-                                        possimus, expedita dolorem quis, sapiente quidem soluta laborum odio enim
-                                        numquam distinctio! Veniam, sapiente ipsam! Animi, porro debitis!</p>
-                                    <span class="readmore"><a href="#">Đọc tiếp >></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="new2-wp" href="#">
-                                <div class="new2-img">
-                                    <img src="./public/img/new2img3.png" alt="">
-                                </div>
-                                <div class="new2-text">
-                                    <div class="new2time">
-                                        <span>8 THÁNG 8, 2019</span>
-                                    </div>
-                                    <span>CÁCH GIỮ CHO DA LUÔN TƯƠI TRẺ</span>
-                                    <div class="socail">
-                                        <span><i class="fas fa-thumbs-up"></i> 15 Lượt thích</span>
-                                        <span><i class="fas fa-comment-alt"></i> 15 Bình luận</span>
-                                    </div>
-                                    <p>Môi trường đang trở nên ô nhiễm hơn, nếu không biết cách bảo vệ, làn da bạn sẽ
-                                        không thể chống trọi với ánh nắng mặt trời, khói bụi và vi khuẩn,... Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing elit. Nemo amet voluptate iusto
-                                        possimus, expedita dolorem quis, sapiente quidem soluta laborum odio enim
-                                        numquam distinctio! Veniam, sapiente ipsam! Animi, porro debitis!</p>
-                                    <span class="readmore"><a href="#">Đọc tiếp >></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="new2-wp" href="#">
-                                <div class="new2-img">
-                                    <img src="./public/img/new2img1.png" alt="">
-                                </div>
-                                <div class="new2-text">
-                                    <div class="new2time">
-                                        <span>8 THÁNG 8, 2019</span>
-                                    </div>
-                                    <span>CÁCH GIỮ CHO DA LUÔN TƯƠI TRẺ</span>
-                                    <div class="socail">
-                                        <span><i class="fas fa-thumbs-up"></i> 15 Lượt thích</span>
-                                        <span><i class="fas fa-comment-alt"></i> 15 Bình luận</span>
-                                    </div>
-                                    <p>Môi trường đang trở nên ô nhiễm hơn, nếu không biết cách bảo vệ, làn da bạn sẽ
-                                        không thể chống trọi với ánh nắng mặt trời, khói bụi và vi khuẩn,... Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing elit. Nemo amet voluptate iusto
-                                        possimus, expedita dolorem quis, sapiente quidem soluta laborum odio enim
-                                        numquam distinctio! Veniam, sapiente ipsam! Animi, porro debitis!</p>
-                                    <span class="readmore"><a href="#">Đọc tiếp >></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="new2-wp" href="#">
-                                <div class="new2-img">
-                                    <img src="./public/img/new2img2.png" alt="">
-                                </div>
-                                <div class="new2-text">
-                                    <div class="new2time">
-                                        <span>8 THÁNG 8, 2019</span>
-                                    </div>
-                                    <span>CÁCH GIỮ CHO DA LUÔN TƯƠI TRẺ</span>
-                                    <div class="socail">
-                                        <span><i class="fas fa-thumbs-up"></i> 15 Lượt thích</span>
-                                        <span><i class="fas fa-comment-alt"></i> 15 Bình luận</span>
-                                    </div>
-                                    <p>Môi trường đang trở nên ô nhiễm hơn, nếu không biết cách bảo vệ, làn da bạn sẽ
-                                        không thể chống trọi với ánh nắng mặt trời, khói bụi và vi khuẩn,... Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing elit. Nemo amet voluptate iusto
-                                        possimus, expedita dolorem quis, sapiente quidem soluta laborum odio enim
-                                        numquam distinctio! Veniam, sapiente ipsam! Animi, porro debitis!</p>
-                                    <span class="readmore"><a href="#">Đọc tiếp >></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="new2-wp" href="#">
-                                <div class="new2-img">
-                                    <img src="./public/img/new2img3.png" alt="">
-                                </div>
-                                <div class="new2-text">
-                                    <div class="new2time">
-                                        <span>8 THÁNG 8, 2019</span>
-                                    </div>
-                                    <span>CÁCH GIỮ CHO DA LUÔN TƯƠI TRẺ</span>
-                                    <div class="socail">
-                                        <span><i class="fas fa-thumbs-up"></i> 15 Lượt thích</span>
-                                        <span><i class="fas fa-comment-alt"></i> 15 Bình luận</span>
-                                    </div>
-                                    <p>Môi trường đang trở nên ô nhiễm hơn, nếu không biết cách bảo vệ, làn da bạn sẽ
-                                        không thể chống trọi với ánh nắng mặt trời, khói bụi và vi khuẩn,... Lorem ipsum
-                                        dolor, sit amet consectetur adipisicing elit. Nemo amet voluptate iusto
-                                        possimus, expedita dolorem quis, sapiente quidem soluta laborum odio enim
-                                        numquam distinctio! Veniam, sapiente ipsam! Animi, porro debitis!</p>
-                                    <span class="readmore"><a href="#">Đọc tiếp >></a></span>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col-12">
-                            <ul class="new-pagi">
-                                <li><span>1</span></li>
-                                <li><span>2</span></li>
-                                <li><span>3</span></li>
-                                <li><span><i class="fas fa-long-arrow-alt-right"></i></span></li>
-                            </ul>
+                            <div class="author">
+                                <span>Nguồn: author</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newd-comment">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ndc-wp">
+                                <div class="fb-comments"
+                                    data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+                                    data-width="100%" data-numposts="2">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -222,6 +222,7 @@ main {}
 
 .checked {
     color: #ffec16;
+    font-size: 15px;
 }
 
 .basestar>span {
