@@ -18,10 +18,6 @@
 
 <body>
     <main>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous"
-            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
-
         <section class="catalog">
             <div class="container-fluid">
                 <div class="row">
@@ -82,10 +78,11 @@
                                 <span>Trong thời gian thần tốc, 8 tips sau sẽ cho bạn làn da sáng bật tông, bóng
                                     mướt</span>
                                 <div class="ndt-wp">
-                                    <time><span>Ngày đăng:</span>20/10/2019</time>
-                                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
-                                        data-width="190" data-layout="button_count" data-action="like" data-size="small"
-                                        data-show-faces="false" data-share="true"></div>
+                                    <time><span>Ngày đăng: </span>20/10/2019</time>
+                                    <div class="likeandcmt">
+                                        <span><i class="fas fa-thumbs-up"></i> Thích 22</span>
+                                        <span>Bình luận 6</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -168,11 +165,50 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="ndc-wp">
-                                <div class="fb-comments"
-                                    data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
-                                    data-width="100%" data-numposts="2">
+                            <div class="ndt-wp ntdbot">
+                                <span class="ndt-title">Bình luận bài viết</span>
+                                <div class="likeandcmt">
+                                    <span><i class="fas fa-thumbs-up"></i> Thích 22</span>
+                                    <span>Bình luận 6</span>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="ndt-showcm">
+                                <div class="ndts-item">
+                                    <div class="ntdsimg">
+                                        <img src="./public/img/user5.png" alt="">
+                                    </div>
+                                    <div class="ntdstext">
+                                        <span>Leona</span>
+                                        <p>Bài viết nói rất phải, nhờ những mẹo nhỏ này mà làn da của mình luôn tươi
+                                            sáng, dạng ngời, vạn
+                                            chàng mê hihi</p>
+                                    </div>
+                                </div>
+                                <div class="ndts-item">
+                                    <div class="ntdsimg">
+                                        <img src="./public/img/user5.png" alt="">
+                                    </div>
+                                    <div class="ntdstext">
+                                        <span>Pantheon</span>
+                                        <p>Bài viết nói rất phải, nhờ những mẹo nhỏ này mà làn da của mình luôn tươi
+                                            sáng, dạng ngời, vạn
+                                            chàng mê hihi Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Nostrum illum cumque et accusamus quos rerum ullam explicabo praesentium
+                                            unde iusto, delectus, magni adipisci repudiandae deleniti ex. Molestiae
+                                            consequatur quos voluptas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                        </div>
+                        <div class="col-12">
+                            <div class="ndtmcm">
+                                <span>Bình luận của bạn</span>
+                                <input type="text" placeholder="Họ và tên">
+                                <textarea placeholder="Nội dung bình luận"></textarea>
+                                <span><a href="#">Gửi</a></span>
                             </div>
                         </div>
                     </div>
