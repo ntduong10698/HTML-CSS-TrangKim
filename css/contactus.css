@@ -47,91 +47,8 @@ main {}
 
 .catalog {
     background-image: url(../public/img/bgcatalog1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 383px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.catalog-wp {
-    width: 100%;
-    height: 100%;
-}
-
-.catalog-ct {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.catalog-ct h1 {
-    font-size: 32px;
-    font-weight: 600;
-    color: white;
-    text-shadow: 1px 1px 3px #e2a22a;
-}
-
-.catalog-ct span a, .catalog-ct span {
-    color: white;
-    font-size: var(--font-16);
-    font-weight: 600;
-}
-
-.catalog-ct span>span {
-    color: var(--text-color-yellow);
-}
-
-.slogan {
-    height: 90px;
-    background-color: var(--wed-yellow);
-    display: flex;
-    align-items: center;
-}
-
-.sloitem-wp {
-    display: flex;
-    align-items: center;
-}
-
-.sloi-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
-}
-
-.sloi-text span {
-    color: white;
-    font-weight: 700;
-    font-size: var(--font-16);
-}
-
-.sloi-text span.slit-cap {
-    font-size: 22px;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-}
-
-.sloi-text span.slit-num {
-    font-size: 20px;
-}
-.sloi-text span.slit-num a{
-    color: white;
-}
-.sloitem1 {
-    justify-content: flex-start;
-}
-
-.sloitem2 {
-    justify-content: center;
-}
-
-.sloitem3 {
-    justify-content: flex-end;
-}
 
 .contactus-map {
     padding-top: 40px;
@@ -265,6 +182,7 @@ main {}
     margin-top: 20px;
     font-weight: 600;
     transition: .4s all;
+    font-size: 15px;
 }
 
 .contactus-text .btn:hover {
