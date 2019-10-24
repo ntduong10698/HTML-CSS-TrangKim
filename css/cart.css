@@ -1,0 +1,308 @@
+.catalog {
+    background-image: url(../public/img/bgcatalog6.png);
+}
+
+@media (max-width:576px) {
+    .catalog {
+        height: 200px;
+    }
+    .slogan {
+        display: none;
+    }
+}
+
+@media (min-width:577px) and ( max-width:767px) {
+    .catalog {
+        height: 250px;
+    }
+    .slogan {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .catalog {
+        height: 250px;
+    }
+}
+
+
+/* Cart page */
+.newsdiv-cap{
+    display: block;
+    text-align: center;
+    font-size: 27px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.newsdiv-cap::after{
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 2px;
+    background-color: var(--wed-yellow);
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+
+}
+.newsdiv-cap>span{
+    color: var(--text-color-yellow);
+}
+.p-cart {
+    margin: 50px 0;
+}
+.p-cart .carttb-wp table {
+    font-size: 14px;
+}
+.p-cart .carttb-wp table th, .carttb-wp table td {
+    border: none;
+}
+.p-cart .carttb-wp table tr{
+    vertical-align: middle;
+    border-bottom: 1px dashed #8d8d8d;
+}
+.p-cart .carttb-wp{
+    overflow-x: auto;
+}
+
+.p-cart .carttb-wp table thead th{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    min-width: 100px;
+}
+.p-cart .carttb-wp table tbody th, .carttb-wp table tbody td{
+    text-align: center;
+    font-weight: 600;
+    vertical-align: middle;
+}
+.carttb-wp table tbody tr:hover td{
+    color: var(--wed-yellow) !important;
+}
+.p-cart .carttb-wp table tbody tr th{
+
+    cursor: pointer;
+}
+.carttb-wp table tbody tr td i{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--wed-yellow);
+    cursor: pointer;
+}
+.carttb-wp table tbody tr td i:hover,
+.carttb-wp table tbody tr td i:focus{
+    background-color: var(--wed-yellow);
+    color: white;
+    border-radius: 50%;
+}
+.carttb-wp table tbody .ctpc:hover{
+    color: var(--text-hover);
+}
+.carttb-wp table tbody tr  td .cidoa{
+    display: flex;
+    border: 1px solid #8a8a8a;
+    display: inline-block;
+    padding: 2px 5px;
+    color: #8a8a8a;
+    border-radius: 5px;
+}
+.carttb-wp table tbody tr  td .cidoa input{
+    padding: 0 10px;
+    display: inline-flex;
+    width: 50px;
+    text-align: center;
+    border: none;
+}
+.carttb-wp table tbody tr  td .cidoa i{
+    cursor: pointer;
+}
+.carttb-wp table tbody tr  td .cidoa i:hover,
+.carttb-wp table tbody tr  td .cidoa i:focus{
+    color: var(--text-color1);
+}
+.p-cart .cartsalecode{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.p-cart .cartsalecode .cartsc-wp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.p-cart .cartsalecode .cartsc-wp input{
+    outline: none;
+    height: 30px;
+    padding: 5px;
+    border: 0.5px solid #bebebe;
+    font-size: var(--font-16);
+    margin-bottom: 0.5rem;
+}
+.p-cart .cartsalecode .btn{
+    color: var(--text-color2);
+    background-color: var(--bg-color1);
+    outline: none;
+    border: none;
+    height: 30px;
+    font-size: var(--font-16);
+    line-height: 30px;
+    padding: 0 10px !important;
+    margin-left: 20px;
+    box-shadow: none;
+    margin-bottom: 0.5rem;
+}
+.p-cart .cartsalecode .btn:hover{
+    background-color: orange;
+}
+.p-cart .cor-wp{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.p-cart .cor-wp span.cor-cap{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.p-cart .cor-wp table{
+    margin-top: 10px;
+    max-width: 400px;
+    min-width: 280px;
+}
+.p-cart .cor-wp table th,
+.p-cart.cor-wp table td
+{
+    padding: 10px;
+    font-weight: 500;
+    min-width: 70px;
+    color: black !important;
+
+}
+.p-cart .cor-wp table tbody {
+    font-size: 16px;
+}
+.p-cart .cor-wp table tbody tr{
+    border: 1px solid #b8b8b8;
+}
+.p-cart .cor-wp table tbody tr:nth-child(3),#cart .cor-wp table tbody tr:nth-child(3){
+    color: red;
+    font-weight: 600;
+}
+.p-cart .cor-wp .btn{
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: var(--wed-yellow);
+    margin-top: 30px;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #e2a22a;
+    transition: .4s all;
+}
+.p-cart .cor-wp .btn:hover{
+    background-color: #a293fc;
+    border: 1px solid #fe75c5
+}
+.p-cart img{
+    width: 50px;
+    height: 50px;
+}
+.tbody-card>tr>td:first-child{
+    width: 100px;
+}
+.tbody-card>tr>td:nth-child(2){
+    width: 100px;
+}
+.tbody-card>tr:last-child{
+    border-bottom:none;
+}
+
+/* End Cart page */
+#userinfo {
+    padding: 30px 0;
+}
+#userinfo .userinfo-wp, #userinfo .tranhis-wp{
+    padding: 1rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    height: 100%;
+    margin-bottom: 15px;
+}
+#userinfo .userinfo-wp .usif-a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 25px;
+}
+.userinfo-wp .usif-a .usifa-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #b8b8b8;
+    overflow: hidden;
+}
+.userinfo-wp .usif-a .usifa-img img{
+    width: 100%;
+    height: 100%;
+}
+.userinfo-wp .usif-a span{
+    font-size: var(--font-26);
+    color: var(--text-color1);
+    font-weight: 600;
+    margin-left: 10px;
+}
+#userinfo .usif-if .us2if-wp {
+    padding-bottom: 1rem;
+}
+#userinfo .usif-if .us2if-wp span{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+#userinfo .usif-if .us2if-wp input{
+    width: 100%;
+    height: 32px;
+    outline: none;
+    padding: 2px 5px;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    font-size: 14px;
+}
+#userinfo .usinu button{
+    color: var(--text-color2);
+    background-color: var(--color-brown);
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+#userinfo .usinu button:hover{
+    background-color: var(--color-brown-hover);
+}
+
+#userinfo .tranhis-wp span.tranhis-cap{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 20px 0 30px 0;
+}
+#userinfo .tranhis-wp .tranhistb-wp{
+    font-size: 14px;
+    overflow-x: auto;
+}

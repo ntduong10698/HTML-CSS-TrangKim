@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang Kim - Chi tiết dịch vụ</title>
+    <!-- Bootstrap 4 Css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- Font Awesome 5 Kit code-->
+    <script src="https://kit.fontawesome.com/3bbe6e5ad3.js"></script>
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+    <main>
+        <section class="catalog">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="catalog-wp">
+                        <div class="catalog-ct">
+                            <h1>Giỏ hàng của bạn</h1>
+                            <span><a href="#">Trang chủ</a> / <span>Giỏ hàng</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slogan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="sloitem-wp sloitem1">
+                            <div class="sloi-img">
+                                <img src="./public/img/tkcircle1.png" alt="">
+                            </div>
+                            <div class="sloi-text">
+                                <span class="slit-cap">Dịch vụ</span>
+                                <span>Chuyên nghiệp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sloitem-wp sloitem2">
+                            <div class="sloi-img">
+                                <img src="./public/img/tkcircle2.png" alt="">
+                            </div>
+                            <div class="sloi-text">
+                                <span class="slit-num"><a href="tel:0962 931 839">0962 931 839</a></span>
+                                <span class="slit-num"><a href="tel:0969 623 399">0969 623 399</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sloitem-wp sloitem3">
+                            <div class="sloi-img">
+                                <img src="./public/img/scircle1.png" alt="">
+                            </div>
+                            <div class="sloi-text">
+                                <span class="slit-cap">Sản phẩm</span>
+                                <span>Chất lượng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-cart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="newsdiv-cap">Giỏ hàng <span>của bạn</span></span>
+                    </div>
+                    <div class="col-12 row">
+                        <div id="userinfo" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <div id="input-info-user-cart" class="userinfo-wp">
+                                <div class="usif-a">
+
+                                    <span>Thông tin khách hàng:</span>
+                                </div>
+                                <div class="usif-if">
+                                    <div class="us2if-wp">
+                                        <span>Tên</span>
+                                        <input id="name" type="text" value="" required="">
+                                    </div>
+                                    <div class="us2if-wp">
+                                        <span>Email</span>
+                                        <input id="email" type="text" value=""
+                                            pattern="^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$"
+                                            title="Vui lòng nhập đúng email" required="">
+                                    </div>
+                                    <div class="us2if-wp">
+                                        <span>Số điện thoại</span>
+                                        <input id="phoneNumber" pattern="(09|01[2|6|8|9])+([0-9]{8})\b"
+                                            title="Vui lòng nhập đúng số điện thoại" type="text" value="" required="">
+                                    </div>
+                                    <div class="us2if-wp">
+                                        <span>Địa chỉ</span>
+                                        <input id="address" type="text" value="" required="">
+                                    </div>
+
+                                    <div class="us2if-wp">
+                                        <span>Yêu cầu đối với nhà cung cấp</span>
+                                        <input id="request" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            <div class="carttb-wp">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col">Sản phẩm</th>
+                                            <th scope="col">Giá</th>
+                                            <th scope="col">Số lượng</th>
+                                            <th scope="col">Tổng cộng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody-card" id="tb-cart">
+                                        <tr class="id-pr-cart">
+                                            <td scope="row"><i class="fas fa-times click-remove-pr"></i></td>
+                                            <td><img src="https://i.ibb.co/MVnBSqw/fruitpicture.jpg" alt=""></td>
+                                            <td class="ctpc">Ớt chuông</td>
+                                            <td>10.000</td>
+                                            <td>
+                                                <div class="cidoa">
+                                                    <i class="fas fa-arrow-alt-circle-down click-increase"></i>
+                                                    <input type="text" class="ip-cart" name="" id="" value="1"
+                                                        placeholder="1">
+                                                    <i class="fas fa-arrow-alt-circle-up click-reduction"></i>
+                                                </div>
+                                            </td>
+                                            <td>10.000 đ</td>
+                                        </tr>
+
+                                        <tr class="id-pr-cart">
+                                            <td scope="row"><i class="fas fa-times click-remove-pr"></i></td>
+                                            <td><img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_02-250x250.jpg"
+                                                    alt=""></td>
+                                            <td class="ctpc">Bưởi diễm</td>
+                                            <td>95.000</td>
+                                            <td>
+                                                <div class="cidoa">
+                                                    <i class="fas fa-arrow-alt-circle-down click-increase"></i>
+                                                    <input type="text" class="ip-cart" name="" id="" value="1"
+                                                        placeholder="1">
+                                                    <i class="fas fa-arrow-alt-circle-up click-reduction"></i>
+                                                </div>
+                                            </td>
+                                            <td>95.000 đ</td>
+                                        </tr>
+
+                                        <tr class="id-pr-cart" ">
+                                            <td scope=" row"><i class="fas fa-times click-remove-pr"></i></td>
+                                            <td><img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_02-250x250.jpg"
+                                                    alt=""></td>
+                                            <td class="ctpc">Dừa xiêm</td>
+                                            <td>7.000</td>
+                                            <td>
+                                                <div class="cidoa">
+                                                    <i class="fas fa-arrow-alt-circle-down click-increase"></i>
+                                                    <input type="text" class="ip-cart" name="" id="" value="1"
+                                                        placeholder="1">
+                                                    <i class="fas fa-arrow-alt-circle-up click-reduction"></i>
+                                                </div>
+                                            </td>
+                                            <td>7.000 đ</td>
+                                        </tr>
+
+                                        <tr class="id-pr-cart">
+                                            <td scope="row"><i class="fas fa-times click-remove-pr"></i></td>
+                                            <td><img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_07-250x250.jpg"
+                                                    alt=""></td>
+                                            <td class="ctpc">Chanh không hạt</td>
+                                            <td>100.000</td>
+                                            <td>
+                                                <div class="cidoa">
+                                                    <i class="fas fa-arrow-alt-circle-down click-increase"></i>
+                                                    <input type="text" class="ip-cart" name="" id="" value="1"
+                                                        placeholder="1">
+                                                    <i class="fas fa-arrow-alt-circle-up click-reduction"></i>
+                                                </div>
+                                            </td>
+                                            <td>100.000 đ</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-sm-end justify-content-center">
+                                <div class="cor-wp">
+
+                                    <table class="table table-hover">
+                                        <tbody id="table-money">
+                                            <tr>
+                                                <th scope="row"> Tổng Sản phẩm</th>
+                                                <td>212.000đ</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"> Phí vận chuyển</th>
+                                                <td>50.000 đ</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"> Tổng tiền</th>
+                                                <td id="sumMoney">262.000 đ</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button id="submit-cart" class="btn">Tiến hành đặt hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Main Js -->
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

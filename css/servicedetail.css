@@ -1,0 +1,165 @@
+.catalog {
+    background-image: url(../public/img/bgcatalog5.png);
+}
+
+.catalog-ct h1 {
+    color: var(--wed-yellow);
+    text-shadow: 0 0 10px var(--wed-yellow);
+}
+
+.catalog-ct span a {
+    color: var(--wed-yellow);
+    font-weight: 500 !important;
+}
+
+.catalog-ct span {
+    color: var(--wed-yellow) !important;
+}
+
+.p-servicedetail {
+    padding: 40px 0;
+    width: 100%;
+}
+.plci-cap {
+    padding: 8px 20px 8px 20px;
+    background-color: #e2a22a;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 215px;
+}
+
+.plci-cap i {
+    color: white;
+    display: none;
+}
+
+.plci-cap span {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ul.plci-content {
+    padding: 30px 0 30px 15px;
+}
+
+.plci-ele {
+    cursor: pointer;
+}
+
+.plci-ele i {
+    color: #ff79cb;
+    font-size: 15px;
+    padding: 7px 0;
+}
+
+.plci-ele i.far.fa-circle {
+    font-size: 13px;
+    color: #996e83;
+}
+
+.plci-ele span {
+    font-size: 14px;
+    color: black;
+    padding-left: 17px;
+}
+
+.plci-ele:hover span {
+    font-weight: 600;
+}
+
+.plci-ele.active span {
+    font-weight: 600;
+}
+
+.sdtitle{
+    position: relative;
+    margin-bottom: 30px;
+}
+.sdtitle::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--wed-yellow);
+    left: 0;
+    bottom: -8px;
+}
+.sdtitle span{
+    font-weight: 600;
+    font-size: 24px;
+}
+@media (max-width:991px) {
+    .pplc-item {
+        min-width: 215px;
+    }
+}
+
+@media (max-width:767px) {
+    .ppl-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .pplc-item {
+        min-width: 200px;
+        margin-bottom: 30px;
+    }
+    .plci-cap {
+        cursor: pointer;
+    }
+    .plci-cap i.fas.fa-caret-down {
+        display: block;
+    }
+    .plci-cap i.fas.fa-caret-up.show {
+        display: block;
+    }
+    .plci-cap i.fas.fa-caret-down.hide {
+        display: none;
+    }
+    .ppl-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .show {
+        display: block !important;
+    }
+    ul.plci-content {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .catalog {
+        height: 200px;
+    }
+    .slogan {
+        display: none;
+    }
+}
+
+@media (min-width:577px) and ( max-width:767px) {
+    .catalog {
+        height: 250px;
+    }
+    .slogan {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .catalog {
+        height: 250px;
+    }
+    .ppl-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .pplc-item:nth-child(1){
+        margin-right: 10px;
+    }
+}
