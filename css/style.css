@@ -691,7 +691,14 @@ ul, li {
     border-radius: 50%;
     height: 99px;
 }
-
+.logo>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size:cover ;
+    background: white;
+    border: 1px solid var(--text-color-yellow);
+}
 .block-nav .bl-nav-right {}
 
 .bl-nav-right .name-company {
